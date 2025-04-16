@@ -1,0 +1,94 @@
+body {
+  background: #060709;
+  color: #38efe6;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+.App {
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 3rem;
+}
+
+h1, h2 {
+  color: #38efe6;
+  font-family: 'Arial Black', sans-serif;
+}
+
+p {
+  color: #ffffff;
+}
+
+button {
+  background-color: #1c1d29;
+  color: #38efe6;
+  padding: 10px 15px;
+  border-radius: 6px;
+  border: 2px solid #32d3cb;
+  cursor: pointer;
+  margin: 10px;
+  text-transform: uppercase;
+  font-family: 'Arial Black', sans-serif;
+  box-shadow: 0 0 20px rgba(8, 211, 191, 0.5);
+}
+
+button:hover {
+  background-color: #38efe6;
+  color: #000000;
+  box-shadow: 0 0 30px rgba(8, 211, 191, 0.5);
+}
+
+input {
+  background-color: #000000;
+  color: #38efe6;
+  border-radius: 4px;
+  border: 1px solid rgba(56, 239, 230, 0.3);
+  padding: 10px;
+  margin: 3px;
+  font-family: Arial, sans-serif;
+}
+
+input:focus {
+  outline: none;
+  border-color: #38efe6;
+  box-shadow: 0 0 10px rgba(8, 211, 191, 0.3);
+}
+
+input::placeholder {
+  color: rgba(8, 211, 191, 0.5);
+}
+
+/* Animation for gradient text */
+.animated-gradient {
+  background: linear-gradient(90deg, #38efe6, #1a87b7, #38efe6);
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient 3s linear infinite;
+  display: inline-block;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% center;
+  }
+  50% {
+    background-position: 100% center;
+  }
+  100% {
+    background-position: 0% center;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .App {
+    padding: 1rem;
+  }
+}
+

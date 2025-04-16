@@ -1,0 +1,124 @@
+.crypto-charts-container {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(8, 211, 191, 0.3);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.charts-title {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  color: #38efe6;
+  font-size: 1.8rem;
+}
+
+.crypto-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.crypto-card {
+  flex: 1;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 0.8rem;
+  padding: 1rem;
+  border: 1px solid rgba(8, 211, 191, 0.3);
+  transition: all 0.3s ease;
+}
+
+.crypto-card.bitcoin {
+  border-left: 4px solid #f7931a;
+}
+
+.crypto-card.ethereum {
+  border-left: 4px solid #627eea;
+}
+
+.crypto-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(8, 211, 191, 0.2);
+}
+
+.crypto-info {
+  text-align: center;
+}
+
+.crypto-info h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+.crypto-price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0.5rem 0;
+  color: #38efe6;
+}
+
+.price-change {
+  font-size: 0.9rem;
+  margin: 0.3rem 0 0;
+}
+
+.price-change.positive {
+  color: #00c853;
+}
+
+.price-change.negative {
+  color: #ff5252;
+}
+
+.charts-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.chart-container {
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 0.8rem;
+  padding: 1rem;
+  border: 1px solid rgba(8, 211, 191, 0.3);
+  height: 300px;
+  position: relative;
+}
+
+.loading-spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  border: 3px solid rgba(8, 211, 191, 0.3);
+  border-radius: 50%;
+  border-top-color: #38efe6;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@media (min-width: 768px) {
+  .charts-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .crypto-cards {
+    flex-direction: column;
+  }
+  
+  .charts-title {
+    font-size: 1.5rem;
+  }
+} 
