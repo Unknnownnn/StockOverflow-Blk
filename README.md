@@ -2,7 +2,7 @@
 <img src="./misc/bline.gif">
 
 ## <img src="./misc/github.gif" width=60 height=60> Parent GitHub: https://github.com/Unknnownnn/StockOverflow
-A blockchain based enviornment for StockOverflow Webpage built using Hardhat and Solidity for minintg contracts and crypto tokens using a local blockchain chain network. This can be accessed using any blockchain wallet such as MetaMask.
+A blockchain based enviornment for StockOverflow Webpage built using Hardhat and Solidity for minting contracts and crypto tokens using a local blockchain chain network. This can be accessed using any blockchain wallet such as MetaMask.
 <br/>Local Chain deployed using hardhat and Solidity contracts. User Interface built using react.js.
 
 ## <img src="./misc/brack.gif" width=60 height=60> How To Run
